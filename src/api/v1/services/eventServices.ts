@@ -34,7 +34,7 @@ export function popularityScore(capacity: number, registrationCount: number) {
         };
     }
 
-    const beforeScore = (capacity / registrationCount) * 100;
+    const beforeScore = (registrationCount / capacity) * 100;
 
     const afterScore = Math.round(beforeScore * 10) / 10;
 
